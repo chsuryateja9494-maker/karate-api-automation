@@ -1,0 +1,13 @@
+
+1. We can execute using the run button normally.
+2. Use Runner class by giving feature file path
+3. Use Config file to pass values like we pass from the properties file in other frameworks
+4. Sure-fire plugin is used to run the tests from cmd or terminal. After sure-fire plugin, we can't execute from Runner
+class in Intellij as it needs paid version.
+5. Include the Runner class in the plugin as shown in pom.xml
+6. Make sure that Global variable or default variable or dev env variable values should be same as mentioned in the
+Feature file.
+7. Here are the cmds below
+A. mvn clean test -Denv=dev = This is to take values from particular env
+B. mvn test -Dtest=Runner = This is to execute without mentioning env. It will take default values from the config file.
+
